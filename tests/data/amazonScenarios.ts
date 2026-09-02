@@ -4,6 +4,7 @@ export type AmazonScenario = {
   resultText: string;
   addToCartLabel: string;
   cashOnDeliveryLabel: string;
+  proceedToBuyLabel: string;
 };
 
 export const amazonScenarios: AmazonScenario[] = [
@@ -12,6 +13,7 @@ export const amazonScenarios: AmazonScenario[] = [
     searchTerm: 'coffee',
     resultText: 'Nescafé Classic Instant Coffee Powder, 90g Jar',
     addToCartLabel: 'Add to cart',
-    cashOnDeliveryLabel: 'Cash on Delivery/Pay on Delivery'
+    cashOnDeliveryLabel: 'Cash on Delivery/Pay on Delivery',
+    proceedToBuyLabel: 'Proceed to Buy',
   },
 ];

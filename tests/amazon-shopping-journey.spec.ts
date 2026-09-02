@@ -14,7 +14,7 @@ test.describe('Amazon recorded shopping journey', () => {
       await amazonFlow.searchForProduct(scenario.searchTerm, scenario.resultText);
 
       const productPage = await amazonFlow.openProductDetailPage(scenario.resultText);
-      await amazonFlow.validateProductPageAndAddToCart(productPage, scenario.addToCartLabel);
+      await amazonFlow.validateProductPageAndAddToCart(productPage, scenario.addToCartLabel, scenario.proceedToBuyLabel);
     });
   }
 });

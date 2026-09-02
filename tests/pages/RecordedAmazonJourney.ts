@@ -106,11 +106,11 @@ export class RecordedAmazonJourney {
     return productPage;
   }
 
-  async validateProductPageAndAddToCart(productPage: Page, addToCartLabel: string): Promise<void> {
+  async validateProductPageAndAddToCart(productPage: Page, addToCartLabel: string, proceedToBuyLabel: string): Promise<void> {
     const addToCartButton = productPage.locator('#desktop_qualifiedBuyBox').getByLabel(addToCartLabel).first();
     await expect(addToCartButton).toBeVisible({ timeout: 30000 });
     await addToCartButton.click();
-    await productPage.getByRole('button', { name: 'Proceed to Buy' }).click();
+    await productPage.getByRole('button', { name: proceedToBuyLabel }).click();
   }
 
 }
