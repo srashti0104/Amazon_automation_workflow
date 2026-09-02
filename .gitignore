@@ -1,0 +1,102 @@
+
+# ==========================================
+# Node.js & Package Management
+# ==========================================
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ==========================================
+# IDE & Editor Files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.env.local
+
+# ==========================================
+# Test Results & Reports
+# ==========================================
+/test-results/
+/playwright-report/
+/blob-report/
+.nyc_output/
+coverage/
+
+# ==========================================
+# Playwright & Automation
+# ==========================================
+/tests/**/*.trace.zip
+/tests/**/*.har
+/playwright/.cache/
+/playwright/.auth/
+videos/
+
+# ==========================================
+# Environment & Configuration (CRITICAL - NO SECRETS)
+# ==========================================
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+*.pem
+*.key
+*.cert
+secrets/
+.credentials
+auth-tokens/
+session-data/
+cookies.json
+
+# ==========================================
+# Build & Distribution
+# ==========================================
+dist/
+build/
+lib/
+es/
+.cache/
+public/
+
+# ==========================================
+# OS Files
+# ==========================================
+Thumbs.db
+*.tmp
+*.temp
+
+# ==========================================
+# Logs
+# ==========================================
+logs/
+*.log
+lerna-debug.log*
+*.lcov
+
+# ==========================================
+# Optional npm cache
+# ==========================================
+.eslintcache
+
+# ==========================================
+# Testing
+# ==========================================
+.jest_cache

@@ -1,0 +1,29 @@
+{
+  "name": "amazon-sdet-automation",
+  "version": "1.0.0",
+  "description": "End-to-end QA automation for Amazon shopping journey using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:specific": "playwright test amazon-shopping-journey",
+    "test:report": "playwright show-report",
+    "test:trace": "playwright test --trace on"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "sdet",
+    "e2e-testing",
+    "amazon"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.0",
+    "typescript": "^7.0.2"
+  }
+}
